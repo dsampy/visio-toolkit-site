@@ -18,3 +18,17 @@ asciidoctor:
     idseparator: '-'
     sectanchors: ''
     icons: font
+profiles:
+  development:
+    deploy: nil 
+  production:
+    base_url: http://dsampy.github.io/visio-toolkit-site
+    ctx_path: /visio-toolkit-site
+    asciidoctor:
+      :attributes:
+        base_url: http://dsampy.github.io/visio-toolkit-site
+        ctx_path: /visio-toolkit-site
+        imagesdir: http://dsampy.github.io/visio-toolkit-site/images 
+    deploy:
+      host: github_pages
+      branch: gh-pages
